@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import logo from "../images/logo.svg";
+import menu from "../images/icon-menu.png";
+import close from "../images/icons-close.png";
 
 function Header() {
     const[isOpen, setIsOpen] = useState(false)
@@ -35,7 +37,7 @@ function Header() {
                         
                         <ul className="flex flex-col items-center justify-center">
                             <li className="my-5 md:my-0 md:mr-5"><button className="text-slate-400">Login</button></li>
-                            <li><button className="btn-cta rounded-full">Sign Up</button></li>
+                            <li><button className="btn-cta rounded-full w-60">Sign Up</button></li>
                          </ul>
                     </div>
                 )}
@@ -50,7 +52,7 @@ function Header() {
                 <button 
                 onClick={() => setIsOpen(!isOpen)}
                 className="uppercase text-sm tracking-wide md:hidden">
-                    {isOpen ? "close" : "Menu"}
+                    {isOpen ? <img src={close}/> : <img src={menu}/>}
                 </button>
             </div>
         </header>
