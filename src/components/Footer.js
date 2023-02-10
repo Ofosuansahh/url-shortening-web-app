@@ -9,7 +9,7 @@ function Footer() {
   return (
     <div>
         <footer className="bg-slate-900 py-10 lg:py-20">
-            <div className="max-width grid grid-cols-1 gap-5 text-center md:grid-cols-3 lg:grid-cols-5">
+            <div className="max-width grid grid-cols-1 gap-5 text-center md:text-left md:grid-cols-3 lg:grid-cols-5">
                 <article className="logo-img">
                     <img src={logo} />
                 </article>
