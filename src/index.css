@@ -11,6 +11,10 @@ img{
   max-width: 100%;
 }
 
+svg{
+  max-width: 100%;
+}
+
 ul, li{list-style: none;}
 
 body {
@@ -75,6 +79,7 @@ p{
   transform: translate(-50%, -50%);
 }
 
+
 svg path:hover{
   fill: cyan;
   cursor: pointer;
@@ -107,18 +112,20 @@ svg path:hover{
 
   .logo-img{
     position: relative;
-    left: 33%;
+    margin-left: 33%;
   }
 
   .socials{
     position: relative;
-    left: 28%;
+    margin-left: 28%;
   }
 
   .mobi img{
     position: relative;
     left: 38%;
   }
+
+
 }
 
 

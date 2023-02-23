@@ -10,7 +10,7 @@ const getLocalStorage = () => {
     if(links) {
         return JSON.parse(localStorage.getItem("links"))
     } else {
-        return []
+        return [links]
     }
 }
 
