@@ -50,8 +50,8 @@ function Shortener() {
     }, [links])
 
   return (
-    <div>
-        <section className="max-width shortener relative">
+    <div className='pl-5 pr-5'>
+        <section className="max-width shortener relative md">
             <picture>
                 <source media="(max-width: 768px)" srcSet={bgDesktop}/>
                 <img src={bgMobile} alt="" />
@@ -60,7 +60,7 @@ function Shortener() {
             <form className="form" onSubmit={handleSubmit}>
                 <div className="flex flex-col md:flex-row">
                     <input type="url" placeholder="Shorten a link here" 
-                    className="w-full py-2 px-5 rounded-lg mb-2 md:mb-0 md:w-2/3" 
+                    className="w-full py-2 px-5 rounded-lg mb-5 md:mb-0 md:w-2/3" 
                     value={text}
                     onChange={(e) => setText(e.target.value)}/>
                     <button 
@@ -80,7 +80,7 @@ function Shortener() {
 
                 <article>
                     <ul className="md:flex md:items-center">
-                        <li className="md:mr-5"><button className="text-cyan-500">{links.full_short_link}</button></li>
+                        <li className="md:mr-5"><button className="text-cyan-500 cursor-default">{links.full_short_link}</button></li>
                         <li>
                             <button onClick={handleCopy} className="btn-cta rounded-lg text-sm focus:bg-slate-800">
                                 {buttonText}
