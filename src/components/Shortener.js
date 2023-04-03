@@ -73,7 +73,7 @@ function Shortener() {
             </form>
 
             <div className="flex flex-col items-center justify-center bg-white text-center
-            md:flex-row md:justify-between p-3 mt-3 rounded-lg">
+              md:flex-row md:justify-between p-3 mt-3 rounded-lg">
                 <article>
                     <h6 className="mb-3 md:mb-0">{links.original_link}</h6>
                 </article>
